@@ -1,0 +1,18 @@
+[ 2016-10-16T20:10:31+08:00 ] ::1 /ThinkPHP/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+ERR: 无法加载模块:Login
+
+[ 2016-10-16T20:10:39+08:00 ] ::1 /ThinkPHP/login%E3%80%82php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Login。php
+
+[ 2016-10-16T20:13:38+08:00 ] ::1 /ThinkPHP/user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+ERR: 无法加载模块:User
+

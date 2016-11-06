@@ -1,0 +1,60 @@
+[ 2016-09-28T12:05:30+08:00 ] ::1 /ThinkPHP/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+ERR: 无法加载模块:Index
+
+[ 2016-09-28T12:05:34+08:00 ] ::1 /ThinkPHP/index%E3%80%82php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Index。php
+
+[ 2016-09-28T16:20:09+08:00 ] ::1 /ThinkPHP/index.php%EF%BC%9Fc=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载模块:Index
+
+[ 2016-09-28T16:20:21+08:00 ] ::1 /ThinkPHP/index.php%EF%BC%9Fc=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+ERR: 无法加载模块:Index
+
+[ 2016-09-28T17:55:01+08:00 ] ::1 /ThinkPHP/baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+ERR: 无法加载模块:Baidu
+
+[ 2016-09-28T17:55:19+08:00 ] ::1 /ThinkPHP/baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: 无法加载模块:Baidu
+
+[ 2016-09-28T17:55:52+08:00 ] ::1 /ThinkPHP/www.baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载模块:Www.baidu
+
+[ 2016-09-28T17:56:27+08:00 ] ::1 /ThinkPHP/www.baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载模块:Www.baidu
+
+[ 2016-09-28T17:56:30+08:00 ] ::1 /ThinkPHP/www.baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+ERR: 无法加载模块:Www.baidu
+
+[ 2016-09-28T18:13:15+08:00 ] ::1 /ThinkPHP/www.baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+ERR: 无法加载模块:Www.baidu
+
