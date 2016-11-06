@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>电子商城</title>
-    <link href="/ThinkPHP/Public/bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/shop/Public/bs/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="/shop">Brand</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,7 +39,7 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <li><a href="/shop/home/login">登陆</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -54,6 +54,9 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
+头部
+<br>
 
 
 
