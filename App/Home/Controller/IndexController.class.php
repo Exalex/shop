@@ -12,5 +12,13 @@ class IndexController extends Controller {
 
         $this->theme("5000")->display();
     }
+
+    public function test()
+    {
+        $u=new \stdClass();
+        $u->name="asd";
+        echo serialize($u);
+        $this->theme("5000")->display();
+    }
 }
 ?>
