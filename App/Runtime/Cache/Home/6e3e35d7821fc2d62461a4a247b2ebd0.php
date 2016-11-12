@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>电子商城</title>
-    <link href="__PUBLIC__/bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/shop/Public/bs/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
@@ -27,11 +27,9 @@
                 <!--<?php foreach($navbar as $nav):?>-->
                  <!--<li><a href="#"><?php echo $nav["nav_title"]?></a></li>-->
                 <!--<?php endforeach?>-->
-                {//波浪线，赋值不输出（数组要赋值才能调用)}
-                {~$navbar=W("Nav/def")}
-                <foreach name="navbar" item="nav">
-                    <li><a href="#">{$nav.nav_title}</a></li>
-                </foreach>
+                
+                <?php $navbar=W("Nav/def");?>
+                <?php if(is_array($navbar)): foreach($navbar as $key=>$nav): ?><li><a href="#"><?php echo ($nav["nav_title"]); ?></a></li><?php endforeach; endif; ?>
 
             </ul>
             <form class="navbar-form navbar-left" role="search">
@@ -41,7 +39,15 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <include file="5000/Common/navbar_login"/>
+                <?php if($global_user): ?>
+<li><a href="#"><?php echo ($global_user->user_name); ?></a></li>
+<li><a href="#">注销</a></li>
+<?php else: ?>
+<li><a href="/shop/home/login">登录</a></li>
+<li><a href="#">注册</a></li>
+<?php endif; ?>
+
+<li><a href="/shop/home/Temp/test">测试</a></li>
 
 
             </ul>
@@ -51,3 +57,11 @@
 
 头部
 <br>
+
+<hr>测试页面<hr>
+
+
+
+尾部
+</body>
+</html>

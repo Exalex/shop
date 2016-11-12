@@ -1,0 +1,25 @@
+[ 2016-11-11T12:02:01+08:00 ] ::1 /shop/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001331s ]
+

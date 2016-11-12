@@ -12,4 +12,5 @@ return array(
     'URL_ROUTE_RULES'=>array( //修改路由
       'login' =>'User/login'
     ),
+    'LOAD_EXT_CONFIG' => 'c_login',
 );

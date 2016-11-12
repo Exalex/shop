@@ -39,17 +39,17 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/shop/home/login">登陆</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
+                <?php if($global_user): ?>
+<li><a href="/shop/home/login"><?php echo ($global_user->user_name); ?></a></li>
+<li><a href="?do=logout">注销</a></li>
+<?php else: ?>
+<li><a href="/shop/home/login">登录</a></li>
+<li><a href="#">注册</a></li>
+<?php endif; ?>
+
+<li><a href="/shop/home/Temp/test">测试</a></li>
+
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

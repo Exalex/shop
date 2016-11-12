@@ -8,6 +8,32 @@ class UserAPI
 //    }
     public $actionInfo=''; //把需要赋值的信息保存为字符串；
 
+    //获取当前登录用户的信息对象（cookie）
+    function getUser()
+    {
+        //判断cookie是否有值
+        $get_cookie = $_COOKIE['userInfo'];
+        if (!$get_cookie) return false;
+        $get_cookie_log = unserialize($get_cookie);//反序列化
+        if (!$get_cookie_log) return false;
+        if ($get_cookie_log && intval($get_cookie_log)>0)
+        {
+            return $get_cookie_log;
+        }
+
+        return false;
+    }
+
+    function isLogin() //判断用户是否登录
+    {
+        $u = $this->getUser();
+        if ($u && intval($u)>0)
+        {
+            return true;
+        }
+
+    }
+
     function login()
     {
         if ($_POST){ //判断是否在提交注册表
@@ -31,10 +57,16 @@ class UserAPI
                     $user_log = new \stdClass();
                     $user_log->user_id = $result[0]["user_id"];
                     $user_log->user_name = $getUserName;
-                    setcookie("userInfo",serialize($user_log),time()+3600*60,"/");
-                    header("location:/Home/index");
-                    $this->actionInfo="header('location:/shop/Home/index');";
+                    setcookie("userInfo",serialize($user_log),time()+20,"/");
+
+                    //登录成功后跳转回之前的页面
+                    if (I("get.from")!="")
+                        $this->actionInfo="header('location:".I("get.from")."');";
+                    else
+                        $this->actionInfo="header('location:/shop/Home/index');";//无参数则跳回首页
+
                     return;
+
                 }
                 else
                 {
