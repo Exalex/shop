@@ -41,7 +41,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php if($global_user): ?>
 <li><a href="#"><?php echo ($global_user->user_name); ?></a></li>
-<li><a href="#">注销</a></li>
+<li><a href="?do=logout">注销</a></li>
 <?php else: ?>
 <li><a href="/shop/home/login">登录</a></li>
 <li><a href="#">注册</a></li>

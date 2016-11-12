@@ -4,7 +4,7 @@ use Think\Controller;
 
 class BaseBehavior extends Controller
 {
-    function __construct()
+    function __construct() //构造函数自动执行
     {
         parent::__construct();//手动执行父类的构造方法，避免被覆盖
         $get_do = I('get.do');//取得get参数

@@ -47,7 +47,8 @@ class UserAPI
                 return;
             }
 
-            $result=M('user')->where("user_name='".$getUserName."'")->limit(1)->select();//取出user表里name=post值的记录
+            //取出user表里name=post值的记录
+            $result=M('user')->where("user_name='".$getUserName."'")->limit(1)->select();
             if ($result && count($result==1))
             {
                 $user_pwd=$result[0]["user_pwd"];//取出该记录的密码

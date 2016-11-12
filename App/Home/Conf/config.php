@@ -10,7 +10,8 @@ return array(
     'DB_DSN'    => 'mysql:host=localhost;dbname=tp;charset=utf8',
     'URL_ROUTER_ON' => true, //开启路由
     'URL_ROUTE_RULES'=>array( //修改路由
-      'login' =>'User/login'
+      'login' =>'User/login',
+      'reg' =>'User/reg'
     ),
     'LOAD_EXT_CONFIG' => 'c_login',
 );

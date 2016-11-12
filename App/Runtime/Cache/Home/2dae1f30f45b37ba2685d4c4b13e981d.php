@@ -61,25 +61,26 @@
 
 
     <div class="container">
-    <!--如设置为get方法提交到当前页（忽略参数），post不忽略-->
-    <form method="post">
-        <div class="form-group">
-            <label>用户名 </label>
-            <input type="text" class="form-control" name="txtUsername" id="txtUsername" placeholder="填入用户名">
-        </div>
-        <div class="form-group">
-            <label>密码</label>
-            <input type="password" class="form-control" name="txtPwd" id="txtPwd" placeholder="填入密码">
-        </div>
+        <h3>用户注册</h3>
+        <!--如设置为get方法提交到当前页（忽略参数），post不忽略-->
+        <form method="post">
+            <div class="form-group">
+                <label>用户名 </label>
+                <input type="text" class="form-control" name="txtUsername" id="txtUsername" placeholder="填入用户名">
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" class="form-control" name="txtPwd" id="txtPwd" placeholder="填入密码">
+            </div>
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" name="saveUser"> 保存一周
-            </label>
-        </div>
-        <button type="submit" class="btn btn-default">登录</button>
-        <span style="color: red"><?php echo ($errorInfo); ?></span>
-    </form>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="saveUser"> 保存一周
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">注册</button>
+            <span style="color: red"><?php echo ($errorInfo); ?></span>
+        </form>
 
     </div>
 
