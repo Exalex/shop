@@ -1,11 +1,9 @@
 <?php
 namespace Home\API;
+use Home\Lib\PasswordHash;
+
 class UserAPI
 {
-//    function __construct() //构造函数 方法名=类名
-//    {
-//        echo "自动加载成功";
-//    }
     public $actionInfo=''; //把需要赋值的信息保存为字符串；
 
     //获取当前登录用户的信息对象（cookie）
@@ -34,6 +32,56 @@ class UserAPI
 
     }
 
+    function reg()
+    {
+        $getUserName= I('post.txtUsername','','/^\w{6,20}$/');// 采用正则表达式进行变量过滤
+        $getUserPWD= I('post.txtPwd','','/^\w{6,20}$/');
+
+        if ($getUserName==""||$getUserPWD=="")
+        {
+            $this->actionInfo='$this->assign("errorInfo","注册失败：密码格式不正确");';
+            return; //下面代码不执行
+        }
+
+        $ph = new PasswordHash(8,false);
+        $user = D("User");
+
+        //用户注册的数据库操作
+        try
+        {
+            $user->user_name = $getUserName;
+            $user->user_pwd =  $ph->HashPassword($getUserPWD);
+            $user_id = $user->add();
+            if ($user_id) //主表插入成功，则插入用户属性表（子表）
+            {
+                $muser = M("user_meta");
+                $muser->user_id = $user_id;
+                $muser->umeta_key = "reg_date";
+                $muser->umeta_value = date();
+                $ret = $muser->add();
+                if ($ret) //跳转登录页面
+                {
+                    $this->actionInfo = "header('location:/shop/Home/login');";
+                    return;
+                }
+                else
+                {
+                    $this->actionInfo = '$this->assign("errorInfo","属性表插入失败");';
+                    return;
+                }
+            }
+            else
+            {
+                $this->actionInfo = '$this->assign("errorInfo","用户主表插入失败");';
+            }
+        }
+        catch (\Think\Exception $ex)
+        {
+            $this->actionInfo = '$this->assign("errorInfo","用户名被占用");';
+            return;
+        }
+    }
+
     function login()
     {
         if ($_POST){ //判断是否在提交注册表
@@ -43,7 +91,7 @@ class UserAPI
 
             if ($getUserName==""||$getUserPWD=="")
             {
-                $this->actionInfo='$this->assign("errorInfo","密码格式不正确");';
+                $this->actionInfo='$this->assign("errorInfo","用户名、密码格式不正确");';
                 return;
             }
 

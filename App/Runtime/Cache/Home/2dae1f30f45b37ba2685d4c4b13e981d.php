@@ -44,7 +44,7 @@
 <li><a href="?do=logout">注销</a></li>
 <?php else: ?>
 <li><a href="/shop/home/login">登录</a></li>
-<li><a href="#">注册</a></li>
+<li><a href="/shop/home/reg">注册</a></li>
 <?php endif; ?>
 
 <li><a href="/shop/home/Temp/test">测试</a></li>

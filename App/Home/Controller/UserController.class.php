@@ -1,21 +1,22 @@
 <?php
 namespace Home\Controller;
 use Home\API\UserAPI;
+use Home\Lib\PasswordHash;
 use Think\Controller;
 use Think\Model;
 
 class UserController extends Controller {   //localhost:?c=user&a=login
     
-    //用户控制器-注册
+    //用户注册
     public function reg()
     {
-        $user = D("user"); //D方法：初始化user模型类
-        $data = array();
-        $data["user_name"] = "yangguohao";
-        $data["user_pwd"] = "006134";
-        $data["user_regdate"] = date('Y-m-d h-i-s');
-        $ret = $user->add($data); //模型类的add方法
-        echo $ret;
+        if($_POST)
+        {
+            $a = new UserAPI();//创建类
+            $a->reg();//执行类里的注册方法
+            eval($a->actionInfo);//动态执行字符串，执行登录判断结果
+        }
+        
         $this->theme("5000")->display();
     }
     
