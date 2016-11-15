@@ -1,7 +1,6 @@
 <?php
 namespace Home\API;
 use Home\Lib\PasswordHash;
-
 class UserAPI
 {
     public $actionInfo=''; //把需要赋值的信息保存为字符串；
@@ -86,8 +85,9 @@ class UserAPI
     {
         if ($_POST){ //判断是否在提交注册表
 
-            $getUserName= I('post.txtUsername','','/^\w{6,20}$/');// 采用正则表达式进行变量过滤
-            $getUserPWD= I('post.txtPwd','','/^\w{6,20}$/');
+            $getUserName = I('post.txtUsername','','/^\w{6,20}$/');// 采用正则表达式进行变量过滤
+            $getUserPWD = I('post.txtPwd','','/^\w{6,20}$/');
+            $getUserVerify = I('post.txtCode');
 
             if ($getUserName==""||$getUserPWD=="")
             {
@@ -95,18 +95,27 @@ class UserAPI
                 return;
             }
 
-            //取出user表里name=post值的记录
+            // 检测输入的验证码是否正确
+            $verify = new \Think\Verify();
+            if(!$verify->check($getUserVerify))
+            {
+                $this->actionInfo='$this->assign("errorInfo","验证码不正确");';
+                return;
+            }
+
+            //取出user表里name=post值的记录,再取密码对比
             $result=M('user')->where("user_name='".$getUserName."'")->limit(1)->select();
             if ($result && count($result==1))
             {
                 $user_pwd=$result[0]["user_pwd"];//取出该记录的密码
+                $ph = new PasswordHash(8,false);//PHPPASS类
 
-                if ($user_pwd==$getUserPWD){ //登录成功
+                if ($ph->CheckPassword($getUserPWD,$user_pwd)){ //登录成功
                     //记录cookie,实例化std类设置属性，把对象序列化保存进cookie；
                     $user_log = new \stdClass();
                     $user_log->user_id = $result[0]["user_id"];
                     $user_log->user_name = $getUserName;
-                    setcookie("userInfo",serialize($user_log),time()+20,"/");
+                    setcookie("userInfo",serialize($user_log),time()+200,"/");
 
                     //登录成功后跳转回之前的页面
                     if (I("get.from")!="")

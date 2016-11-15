@@ -11,7 +11,11 @@
             <label>密码</label>
             <input type="password" class="form-control" name="txtPwd" id="txtPwd" placeholder="填入密码">
         </div>
-
+        <div class="form-inline">
+            <label>验证码:</label>
+            <input type="text" class="form-control" name="txtCode" id="txtCode" placeholder="输入验证码">
+            <img src="\shop\Home\Temp\verify" style="height: 40px;width: 140px;cursor: pointer" onclick="this.src='/shop/Home/Temp/verify?code='+Math.random();"   >
+        </div>
         <div class="checkbox">
             <label>
                 <input type="checkbox" name="saveUser"> 保存一周
