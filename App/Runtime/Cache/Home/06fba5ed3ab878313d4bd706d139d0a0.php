@@ -60,32 +60,38 @@
 
 
 
+    <style>
+        .media{margin-bottom: 30px;border-bottom: solid 1px #ddd;}
+    </style>
     <div class="container">
-    <!--如设置为get方法提交到当前页（忽略参数），post不忽略-->
-    <form method="post">
-        <div class="form-group">
-            <label>用户名 </label>
-            <input type="text" class="form-control" name="txtUsername" id="txtUsername" placeholder="填入用户名">
-        </div>
-        <div class="form-group">
-            <label>密码</label>
-            <input type="password" class="form-control" name="txtPwd" id="txtPwd" placeholder="填入密码">
-        </div>
-        <div class="form-inline">
-            <label>验证码:</label>
-            <input type="text" class="form-control" name="txtCode" id="txtCode" placeholder="输入验证码">
-            <img src="\shop\Home\Temp\verify" style="height: 40px;width: 140px;cursor: pointer" onclick="this.src='/shop/Home/Temp/verify?code='+Math.random();"   >
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" name="saveUser"> 保存一周
-            </label>
-        </div>
-        <button type="submit" class="btn btn-default">登录</button>
-        <span style="color: red"><?php echo ($errorInfo); ?></span>
-    </form>
+        <div class="col-md-8">
+            <?php if(is_array($info_data_main)): foreach($info_data_main as $key=>$info): ?><div class="row">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="/shop/Public/images/php.jpg" alt="..." style="width: 80px;height: 80px">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"><?php echo ($info["info_title"]); ?></h4>
+                            <div class="well"><?php echo ($info["info_content"]); ?></div>
+                            <p>
+                                <span>点击量：54</span>
+                                <span>评论数：34</span>
+                            </p>
+                        </div>
+                    </div>
+                </div><?php endforeach; endif; ?>
 
+            <div class="pagination">
+                <?php echo ($pagebar); ?>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
     </div>
+
+
 
 
 

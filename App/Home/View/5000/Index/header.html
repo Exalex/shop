@@ -30,7 +30,7 @@
                 {//波浪线，赋值不输出（数组要赋值才能调用)}
                 {~$navbar=W("Nav/def")}
                 <foreach name="navbar" item="nav">
-                    <li><a href="#">{$nav.nav_title}</a></li>
+                    <li><a href="{$nav.nav_href}">{$nav.nav_title}</a></li>
                 </foreach>
 
             </ul>

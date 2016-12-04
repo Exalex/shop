@@ -1,0 +1,39 @@
+<extend name="5000/Index/Base" />
+
+
+<block name="customer">
+    <style>
+        .media{margin-bottom: 30px;border-bottom: solid 1px #ddd;}
+    </style>
+    <div class="container">
+        <div class="col-md-8">
+            <foreach name="info_data_main" item="info">
+                <div class="row">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="__PUBLIC__/images/php.jpg" alt="..." style="width: 80px;height: 80px">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">{$info.info_title}</h4>
+                            <div class="well">{$info.info_content}</div>
+                            <p>
+                                <span>点击量：54</span>
+                                <span>评论数：34</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </foreach>
+
+            <div class="pagination">
+                {$pagebar}
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+
+</block>

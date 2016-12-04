@@ -29,7 +29,7 @@
                 <!--<?php endforeach?>-->
                 
                 <?php $navbar=W("Nav/def");?>
-                <?php if(is_array($navbar)): foreach($navbar as $key=>$nav): ?><li><a href="#"><?php echo ($nav["nav_title"]); ?></a></li><?php endforeach; endif; ?>
+                <?php if(is_array($navbar)): foreach($navbar as $key=>$nav): ?><li><a href="<?php echo ($nav["nav_href"]); ?>"><?php echo ($nav["nav_title"]); ?></a></li><?php endforeach; endif; ?>
 
             </ul>
             <form class="navbar-form navbar-left" role="search">
