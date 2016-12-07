@@ -17,12 +17,20 @@ class InfoAPI
 
     function loadMainData($where_main="",$where_detail="")//加载主表数据
     {
+        if ($where_main!="")//传了参数多拼接where条件，暂时没起作用
+        {
+            $where_main=$where_main."and info_type=".$this->_info_type;
+        }
+        else//没传参数情况
+        {
+            $where_main="info_type=".$this->_info_type;
+        }
+
         $info_count=M("info")->where($where_main)->count();
         $page=new \Think\Page($info_count,$this->_page_size);
         $this->_page_bar=$page->show();//分页组件显示
         //主表数据取值
-        $this->_main_data=M("info")->where("info_type=".$this->_info_type)
-            ->order("info_id asc")->where($where_main)->limit($page->firstRow.','.$page->listRows)->select();
+        $this->_main_data=M("info")->order("info_id asc")->where($where_main)->limit($page->firstRow.','.$page->listRows)->select();
 
         //取出当前分页的info_id ，取出在这范围内info_id的子表数据
         $info_id_set=""; //拼凑一个类似 4，5，6，7 的字符串

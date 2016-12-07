@@ -1,0 +1,539 @@
+[ 2016-12-07T10:31:43+08:00 ] ::1 /shop/index.php/Home/Info/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002541s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 15,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(19,20,21,22,23) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.025172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-12-07T10:44:32+08:00 ] ::1 /shop/index.php/Home/Info/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.002853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004110s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 15,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(19,20,21,22,23) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-12-07T10:44:35+08:00 ] ::1 /shop/home/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\2dae1f30f45b37ba2685d4c4b13e981d.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\2dae1f30f45b37ba2685d4c4b13e981d.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\2dae1f30f45b37ba2685d4c4b13e981d.php 第 42 行.
+NOTIC: [8] Undefined variable: errorInfo C:\wamp\www\shop\App\Runtime\Cache\Home\2dae1f30f45b37ba2685d4c4b13e981d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-12-07T10:44:35+08:00 ] ::1 /shop/home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+NOTIC: [8] Undefined index: name C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 144 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\3f9d2b480676617fa8e79f1ae80a4954.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\3f9d2b480676617fa8e79f1ae80a4954.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\3f9d2b480676617fa8e79f1ae80a4954.php 第 42 行.
+NOTIC: [8] Undefined variable: errorInfo C:\wamp\www\shop\App\Runtime\Cache\Home\3f9d2b480676617fa8e79f1ae80a4954.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2016-12-07T10:44:35+08:00 ] ::1 /shop/Home/Temp/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.002447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003597s ]
+NOTIC: [8] Use of undefined constant yes - assumed 'yes' C:\wamp\www\shop\App\Home\Controller\TempController.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2016-12-07T10:44:36+08:00 ] ::1 /shop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-12-07T12:52:22+08:00 ] ::1 /shop/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.002307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\b65fd5c808205a9ead04a1d4d9013416.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-12-07T19:35:59+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.003135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003953s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2016-12-07T20:23:45+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002643s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024925s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2016-12-07T20:24:22+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.002194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003137s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2016-12-07T21:46:03+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.002372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003208s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-12-07T21:46:04+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002604s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-12-07T21:46:38+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004045s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.022587s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-12-07T23:30:10+08:00 ] ::1 /shop/Home/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index: userInfo C:\wamp\www\shop\App\Home\API\UserAPI.class.php 第 12 行.
+INFO: Run Home\Behaviors\UserBehavior [ RunTime:0.001805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002556s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `5000_info` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] array_merge(): Argument #2 is not an array C:\wamp\www\shop\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `5000_info` ORDER BY info_id asc LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `5000_info_meta` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `5000_info_meta` WHERE ( info_id in(1,2,3,4,8) )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: navbar C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 27 行.
+SQL: SHOW COLUMNS FROM `5000_navbar` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `5000_navbar` ORDER BY nav_index  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: global_user C:\wamp\www\shop\App\Runtime\Cache\Home\06fba5ed3ab878313d4bd706d139d0a0.php 第 42 行.
+SQL: SHOW COLUMNS FROM `5000_info_widget` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `5000_info_widget` WHERE ( wig_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `5000_info` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `5000_info` WHERE ( info_type=1 ) ORDER BY info_id desc LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+

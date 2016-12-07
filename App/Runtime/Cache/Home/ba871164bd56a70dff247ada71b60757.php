@@ -65,26 +65,26 @@
     </style>
 
     <script>//循环拼接一个脚本数组
-        var detail_data=[
+    var detail_data=[
             <?php if(is_array($info_data_detail)): foreach($info_data_detail as $key=>$info): ?>[<?php echo ($info["info_id"]); ?>,'<?php echo ($info["im_key"]); ?>','<?php echo ($info["im_value"]); ?>'],<?php endforeach; endif; ?>
-            [-1,'','']
-        ];
-//        alert(detail_data);
+    [-1,'','']
+    ];
+    //        alert(detail_data);
 
-        function getMeta(info_id,im_key,default_value)
+    function getMeta(info_id,im_key,default_value)
+    {
+        for(var i=0;i<detail_data.length;i++)
         {
-            for(var i=0;i<detail_data.length;i++)
+            if (detail_data[i][0]==info_id && detail_data[i][1]==im_key)
             {
-                if (detail_data[i][0]==info_id && detail_data[i][1]==im_key)
-                {
-                    return detail_data[i][2];
-                }
+                return detail_data[i][2];
             }
-                if (default_value)
-                        return default_value;
-                else
-                    return 0;
         }
+        if (default_value)
+            return default_value;
+        else
+            return 0;
+    }
     </script>
 
     <div class="container">
